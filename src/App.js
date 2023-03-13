@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import TodoFeature from './features/Todo';
+import AlbumFeature from './features/Album';
+import ColorBox from './commponents/ColorBox';
+import Counter from './commponents/Counter';
 
 function App() {
   const name = 'Tien Toan';
@@ -16,7 +19,7 @@ function App() {
   const colorList = ['red', 'green', 'blue']
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Tien Toan 123 pro vip kk
@@ -45,12 +48,15 @@ function App() {
         )}
         <p>{student.name} - {student.soThich}</p>
         <ul>
-            {colorList.map( color =>  (
-              <li style={{color}}>{color}</li>
-            ))}
+          {colorList.map(color => (
+            <li style={{ color }}>{color}</li>
+          ))}
         </ul>
-        <TodoFeature/>
-      </header>
+        <TodoFeature />
+      </header> */}
+      <AlbumFeature />
+      <ColorBox />
+      <Counter />
     </div>
   );
 }
